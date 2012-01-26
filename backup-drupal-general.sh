@@ -10,9 +10,8 @@ defaultPrep="--prep"
 ###################################
 
 # backup-drupal-general.sh by Sharon L. Krossa, skrossa@sharonkrossa.com
-# Version 2.1 (29 Dec 2011)
-thisVersion="2.2"
-thisVersionDate="22 Jan 2012"
+thisVersion="2.2.1"
+thisVersionDate="25 Jan 2012"
 #
 # All code is Copyright ©2010 - 2012 by the original authors
 #
@@ -282,7 +281,7 @@ if [ "$extraLabel" ] ; then
 fi
 
 if [ "$buDirLevel" ] ; then
-  if [ "$buDirLevel" == "--prep" -o "$buDirLevel" == "--noprep"] ; then
+  if [ "$buDirLevel" == "--prep" -o "$buDirLevel" == "--noprep" ] ; then
     prep=${buDirLevel}
     buDirLevel=${defaultBuDirLevel}
   elif [ ! "$prep" ] ; then
